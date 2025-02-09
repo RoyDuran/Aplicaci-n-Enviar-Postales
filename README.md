@@ -1,6 +1,3 @@
-Aquí tienes el código en formato `.md`:  
-
-```md
 # 📮 Proyecto: Envío de Postales Digitales 📬
 
 ¡Bienvenido a **Envío de Postales Digitales**! 🌍💌  
@@ -17,34 +14,49 @@ Este proyecto te permite crear y enviar postales personalizadas a cualquier pers
 ---
 
 ## 🛠️ Requisitos  
-🔹 Servidor con PHP habilitado 🖥️  
+🔹 Servidor local con XAMPP instalado 🖥️  
+🔹 Servidor Apache y módulo PHP activados 🌐  
 🔹 Biblioteca PHPMailer para envío de correos 📧  
-🔹 Conexión a Internet activa 🌐  
+🔹 Conexión a Internet activa 📡  
 
 ---
 
 ## 📌 Instalación  
-1️⃣ Clona este repositorio:  
+1️⃣ Asegúrate de que XAMPP esté instalado en tu sistema.  
+   - Descárgalo desde: [https://www.apachefriends.org/es/index.html](https://www.apachefriends.org/es/index.html)
+   - Instala y ejecuta el Panel de Control de XAMPP.
+
+2️⃣ Clona este repositorio en la carpeta `htdocs` de XAMPP:  
    ```bash
-   git clone https://github.com/tuusuario/envio-postales.git
+   cd C:\xampp\htdocs
+   git clone https://github.com/RoyDuran/Aplicaci-n-Enviar-Postales.git
    ```  
-2️⃣ Accede al directorio del proyecto:  
-   ```bash
-   cd envio-postales
-   ```  
-3️⃣ Instala las dependencias (si usas Composer):  
-   ```bash
-   composer install
+
+3️⃣ Asegúrate de que la ruta del proyecto sea:  
+   ```
+   C:\xampp\htdocs\Aplicaci-n-Enviar-Postales
+   ```
+
+4️⃣ Configura el archivo de correo `config.php` con tus credenciales SMTP:  
+   ```php
+   define('SMTP_HOST', 'smtp.tudominio.com');
+   define('SMTP_USER', 'tuemail@dominio.com');
+   define('SMTP_PASS', 'tucontraseña');
+   define('SMTP_PORT', 587);
    ```  
 
 ---
 
 ## 🎨 Uso  
-1️⃣ Abre la interfaz web del proyecto.  
-2️⃣ Selecciona una imagen para tu postal.  
-3️⃣ Escribe un mensaje especial.  
-4️⃣ Introduce el correo del destinatario.  
-5️⃣ Haz clic en **Enviar** y sorprende a alguien! 💖  
+1️⃣ Inicia XAMPP y activa **Apache** y **MySQL**.  
+2️⃣ Accede a tu navegador y abre la URL:  
+   ```
+   http://localhost/Aplicaci-n-Enviar-Postales/
+   ```  
+3️⃣ Selecciona una imagen para tu postal.  
+4️⃣ Escribe un mensaje especial.  
+5️⃣ Introduce el correo del destinatario.  
+6️⃣ Haz clic en **Enviar** y sorprende a alguien! 💖  
 
 ---
 
@@ -56,9 +68,8 @@ Este proyecto te permite crear y enviar postales personalizadas a cualquier pers
 ---
 
 ## 👨‍💻 Autor  
-📌 **[Tu Nombre](https://github.com/tuusuario)**  
+📌 **[RoyDuran](https://github.com/tuusuario)**  
 
-📜 **Licencia:** Proyecto bajo la licencia MIT 📄  
-```
+📜 **Licencia:** Proyecto bajo la licencia MIT 📄
 
-Si necesitas cambios o mejoras, dime y lo ajustamos. 🚀💌
+
