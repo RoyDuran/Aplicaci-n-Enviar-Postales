@@ -68,7 +68,7 @@ Este proyecto te permite crear y enviar postales personalizadas a cualquier pers
 ---
 
 ## 👨‍💻 Autor  
-📌 **[RoyDuran](https://github.com/tuusuario)**  
+📌 **[RoyDuran](https://github.com/RoyDuran)**  
 
 📜 **Licencia:** Proyecto bajo la licencia MIT 📄
 
