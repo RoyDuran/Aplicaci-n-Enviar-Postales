@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario de envio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilos.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1>Enviar  postales</h1>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="imagenes/puebloBlanco.jfif" alt="Descripción de la imagen 1">
+            <p>Pueblo blanco</p>
+        </div>
+        <div class="image-item">
+            <img src="imagenes/papaNoel.jfif" alt="Descripción de la imagen 2">
+            <p>Papa Noel</p>
+        </div>
+        <div class="image-item">
+            <img src="imagenes/arbolIluminado.jfif" alt="Descripción de la imagen 3">
+            <p>Arbol iluminado</p>
+        </div>
+        <div class="image-item">
+            <img src="imagenes/arbolNavidad.jfif" alt="Descripción de la imagen 4">
+            <p>Arbol de Navidad</p>
+        </div>
+        <div class="image-item">
+            <img src="imagenes/portalBelen.jfif" alt="Descripción de la imagen 5">
+            <p>Portal de Belen</p>
+        </div>
+    </div>
+    <form action="enviarCorreo.php" method="post">
+        <p>Destinatario
+            <input type="text" name="destinatario" placeholder="nombre apellido1 apellido2" required>
+        </p>
+        <p>Mensaje
+            <input type="text" name="mensaje" required>
+        </p>
+        <p>Asunto
+            <select name="asunto" required>
+                <option value="" disabled selected>Elija una opción</option>
+                <option value="cumpleaños">Felicitar el cumpleaños</option>
+                <option value="navidad">Felicitar la navidad</option>
+                <option value="novedades">Informar sobre las ultimas novedades</option>
+            </select>
+        </p>
+        <p>Imagen
+            <select name="imagen">
+                <option value="" disabled selected>Elija una opción</option>
+                <option value="papaNoel.jfif">Papa noel</option>
+                <option value="arbolNavidad.jfif">Arbol de navidad</option>
+                <option value="arbolIluminado.jfif">Arbol iluminado</option>
+                <option value="puebloBlanco.jfif">Pueblo blanco</option>
+                <option value="portalBelen.jfif">portal Belen</option>
+            </select>
+        </p>
+        <input  type="submit" value="enviar">
+    </form>
+</body>
+
+</html>
